@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '.btn-copy', function () {
-        let inputBox = $($(this).parents('div')[0]).find('input:not([type=checkbox])');
+        let inputBox = $($(this).parents('div')[1]).find('input:not([type=checkbox])');
         inputBox.focus();
         inputBox.select();
         document.execCommand('copy');
